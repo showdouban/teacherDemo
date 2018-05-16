@@ -1,0 +1,23 @@
+include ':app'
+include ':common_library_webmodule'
+project(':common_library_webmodule').projectDir = new File('../CordovaCrossWalkAndroid/common_library_webmodule')
+include ':common_library_CordovaLib'
+project(':common_library_CordovaLib').projectDir = new File('../CordovaCrossWalkAndroid/common_library_CordovaLib')
+include ':common_library_xwalkcore'
+project(':common_library_xwalkcore').projectDir = new File('../CordovaCrossWalkAndroid/common_library_xwalkcore')
+include ':common_library_base'
+project(':common_library_base').projectDir = new File('../CordovaCrossWalkAndroid/common_library_base')
+include ':common_component_vlc'
+project(':common_component_vlc').projectDir = new File('../CordovaCrossWalkAndroid/common_component_vlc')
+include ':common_component_correctwork'
+project(':common_component_correctwork').projectDir = new File('../CordovaCrossWalkAndroid/common_component_correctwork')
+include ':common_library_buriedpoint'
+project(':common_library_buriedpoint').projectDir = new File('../CordovaCrossWalkAndroid/common_library_buriedpoint')
+include ':common_component_zxing'
+project(':common_component_zxing').projectDir = new File('../CordovaCrossWalkAndroid/common_component_zxing')
+include ':common_component_clipimage'
+project(':common_component_clipimage').projectDir = new File('../CordovaCrossWalkAndroid/common_component_clipimage')
+include ':common_component_scratch'
+project(':common_component_scratch').projectDir = new File('../CordovaCrossWalkAndroid/common_component_scratch')
+include ':common_component_compileimage'
+project(':common_component_compileimage').projectDir = new File('../CordovaCrossWalkAndroid/common_component_compileimage')
