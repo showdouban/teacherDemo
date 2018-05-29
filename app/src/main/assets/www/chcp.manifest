@@ -1,5 +1,33 @@
 [
   {
+    "file": "cordova_plugins.js",
+    "hash": "ba8f6d3c6839f5cdaac0d418906a4130"
+  },
+  {
+    "file": "cordova-js-src/android/nativeapiprovider.js",
+    "hash": "5bd4e8d57dbb33e4b378530eb4c55673"
+  },
+  {
+    "file": "cordova-js-src/android/promptbasednativeapi.js",
+    "hash": "ac5a1738b8215ce75471009f5b88f15b"
+  },
+  {
+    "file": "cordova-js-src/exec.js",
+    "hash": "75fa5a06b83e22b8a59422e1d7cd71f9"
+  },
+  {
+    "file": "cordova-js-src/platform.js",
+    "hash": "08ed357697d6c62da75d1fb6a6823d6e"
+  },
+  {
+    "file": "cordova-js-src/plugin/android/app.js",
+    "hash": "9b3a097b2bf33ac7824093cb70d7bfc0"
+  },
+  {
+    "file": "cordova.js",
+    "hash": "891b57e6180dd5130770be6af740a98b"
+  },
+  {
     "file": "css/index.css",
     "hash": "26c27e5e34f274139432b4b1c1e587ac"
   },
@@ -9,10 +37,354 @@
   },
   {
     "file": "index.html",
-    "hash": "b914039dcb8c2e25698bc04f1765f083"
+    "hash": "818081da9e6dbe3cd22a8c0fc6b2d65a"
   },
   {
     "file": "js/index.js",
-    "hash": "a50c6790e49e0be89ad5d962c32c7736"
+    "hash": "c5e57d5ee2a6a338277a6f7d67dea10e"
+  },
+  {
+    "file": "plugins/cordova-hot-code-push-plugin/node_modules/sax/lib/sax.js",
+    "hash": "4572bd5e2c9eff7b689cbe1b316592cb"
+  },
+  {
+    "file": "plugins/cordova-hot-code-push-plugin/node_modules/sax/LICENSE",
+    "hash": "326d5674181c4bb210e424772c60fa80"
+  },
+  {
+    "file": "plugins/cordova-hot-code-push-plugin/node_modules/sax/README.md",
+    "hash": "944cbc6b94679e969d089a9cedc7dc7f"
+  },
+  {
+    "file": "plugins/cordova-hot-code-push-plugin/node_modules/xml2js/lib/bom.js",
+    "hash": "77e4caf3e1b1d88eaff69eaa01e3e97c"
+  },
+  {
+    "file": "plugins/cordova-hot-code-push-plugin/node_modules/xml2js/lib/builder.js",
+    "hash": "f2117b51c5490783776f4c9f6316c44f"
+  },
+  {
+    "file": "plugins/cordova-hot-code-push-plugin/node_modules/xml2js/lib/defaults.js",
+    "hash": "577f810f180b5e371b3a1a38aa7e1ff2"
+  },
+  {
+    "file": "plugins/cordova-hot-code-push-plugin/node_modules/xml2js/lib/parser.js",
+    "hash": "de75fb7fc7adde79b5d62d69bc45be3a"
+  },
+  {
+    "file": "plugins/cordova-hot-code-push-plugin/node_modules/xml2js/lib/processors.js",
+    "hash": "c4c862db05e5cdc8e70d50328e852269"
+  },
+  {
+    "file": "plugins/cordova-hot-code-push-plugin/node_modules/xml2js/lib/xml2js.js",
+    "hash": "330b48ba1edd6ef21b6294cd67cb9f15"
+  },
+  {
+    "file": "plugins/cordova-hot-code-push-plugin/node_modules/xml2js/LICENSE",
+    "hash": "d9fc599c8d9e6f8665063862aac66dfc"
+  },
+  {
+    "file": "plugins/cordova-hot-code-push-plugin/node_modules/xml2js/README.md",
+    "hash": "b9e5e4910dc5b12ed645f5653efe68c7"
+  },
+  {
+    "file": "plugins/cordova-hot-code-push-plugin/node_modules/xmlbuilder/.npmignore",
+    "hash": "6ef2e700f71465983a376458e844a8e9"
+  },
+  {
+    "file": "plugins/cordova-hot-code-push-plugin/node_modules/xmlbuilder/CHANGELOG.md",
+    "hash": "6a7132379a7bddd2e2e09bcfea1c2ced"
+  },
+  {
+    "file": "plugins/cordova-hot-code-push-plugin/node_modules/xmlbuilder/lib/index.js",
+    "hash": "82d569f0ef562f513b8b201885044594"
+  },
+  {
+    "file": "plugins/cordova-hot-code-push-plugin/node_modules/xmlbuilder/lib/Utility.js",
+    "hash": "e3f62d763885099d6173e06bf8c10c35"
+  },
+  {
+    "file": "plugins/cordova-hot-code-push-plugin/node_modules/xmlbuilder/lib/XMLAttribute.js",
+    "hash": "b5df0d34f9fe7963aeebe38608e52662"
+  },
+  {
+    "file": "plugins/cordova-hot-code-push-plugin/node_modules/xmlbuilder/lib/XMLCData.js",
+    "hash": "63d506bb86b797a1244999a0c3ba09cf"
+  },
+  {
+    "file": "plugins/cordova-hot-code-push-plugin/node_modules/xmlbuilder/lib/XMLComment.js",
+    "hash": "d55bf33b0cf8404f977387a2e208f9f8"
+  },
+  {
+    "file": "plugins/cordova-hot-code-push-plugin/node_modules/xmlbuilder/lib/XMLDeclaration.js",
+    "hash": "cc4f2d53adf1ec0f5a36db17d9aed6ac"
+  },
+  {
+    "file": "plugins/cordova-hot-code-push-plugin/node_modules/xmlbuilder/lib/XMLDocType.js",
+    "hash": "f2e5f48f46e9af232cb9283520fb5d98"
+  },
+  {
+    "file": "plugins/cordova-hot-code-push-plugin/node_modules/xmlbuilder/lib/XMLDocument.js",
+    "hash": "5dc3d740d23f1c8809edb3599e1b73d1"
+  },
+  {
+    "file": "plugins/cordova-hot-code-push-plugin/node_modules/xmlbuilder/lib/XMLDocumentCB.js",
+    "hash": "4d844e7da63920998f484322e0539a1f"
+  },
+  {
+    "file": "plugins/cordova-hot-code-push-plugin/node_modules/xmlbuilder/lib/XMLDTDAttList.js",
+    "hash": "4844c71ae88f43186e941cfef0bd4d32"
+  },
+  {
+    "file": "plugins/cordova-hot-code-push-plugin/node_modules/xmlbuilder/lib/XMLDTDElement.js",
+    "hash": "a38c4a36fb1479aa61037f137621a61c"
+  },
+  {
+    "file": "plugins/cordova-hot-code-push-plugin/node_modules/xmlbuilder/lib/XMLDTDEntity.js",
+    "hash": "c34aa3a80073967f8b6ea917e9f9717e"
+  },
+  {
+    "file": "plugins/cordova-hot-code-push-plugin/node_modules/xmlbuilder/lib/XMLDTDNotation.js",
+    "hash": "0185bbce82531641002a304e77d45d22"
+  },
+  {
+    "file": "plugins/cordova-hot-code-push-plugin/node_modules/xmlbuilder/lib/XMLElement.js",
+    "hash": "7a92dc492d75aa64414c1fdea13d0ae7"
+  },
+  {
+    "file": "plugins/cordova-hot-code-push-plugin/node_modules/xmlbuilder/lib/XMLNode.js",
+    "hash": "3a6a250dc38070bb9069925fbf9fb108"
+  },
+  {
+    "file": "plugins/cordova-hot-code-push-plugin/node_modules/xmlbuilder/lib/XMLProcessingInstruction.js",
+    "hash": "25e05ff6f2f32409c866290a5505e48a"
+  },
+  {
+    "file": "plugins/cordova-hot-code-push-plugin/node_modules/xmlbuilder/lib/XMLRaw.js",
+    "hash": "b96159c2a6201e97266ba9eb11c2e4b1"
+  },
+  {
+    "file": "plugins/cordova-hot-code-push-plugin/node_modules/xmlbuilder/lib/XMLStreamWriter.js",
+    "hash": "2d8dbc1a93d920da264af811a360dd22"
+  },
+  {
+    "file": "plugins/cordova-hot-code-push-plugin/node_modules/xmlbuilder/lib/XMLStringifier.js",
+    "hash": "a6e43bcfd7253e91e132c29c4c3a02ac"
+  },
+  {
+    "file": "plugins/cordova-hot-code-push-plugin/node_modules/xmlbuilder/lib/XMLStringWriter.js",
+    "hash": "fbef6c7daf0ceba404149f519f189435"
+  },
+  {
+    "file": "plugins/cordova-hot-code-push-plugin/node_modules/xmlbuilder/lib/XMLText.js",
+    "hash": "8690ca63587c178f7fb2198ec57f297c"
+  },
+  {
+    "file": "plugins/cordova-hot-code-push-plugin/node_modules/xmlbuilder/lib/XMLWriterBase.js",
+    "hash": "62d0fa18fa7d604fa4b6cdf978d5dd41"
+  },
+  {
+    "file": "plugins/cordova-hot-code-push-plugin/node_modules/xmlbuilder/LICENSE",
+    "hash": "eb65a7137aed46eac98ceb8cb8b057a1"
+  },
+  {
+    "file": "plugins/cordova-hot-code-push-plugin/node_modules/xmlbuilder/README.md",
+    "hash": "0a9ba53aaa94760853efa94a3ec03703"
+  },
+  {
+    "file": "plugins/cordova-hot-code-push-plugin/plugin.xml",
+    "hash": "3dd843a5aba70c12b3933a166dcc3c05"
+  },
+  {
+    "file": "plugins/cordova-hot-code-push-plugin/scripts/afterPrepareHook.js",
+    "hash": "a27cdedfc87c1807529e5f4fc8b5fb26"
+  },
+  {
+    "file": "plugins/cordova-hot-code-push-plugin/scripts/beforePluginInstallHook.js",
+    "hash": "5ca96290a2fab8e222d0ebf8aa0dd7d8"
+  },
+  {
+    "file": "plugins/cordova-hot-code-push-plugin/scripts/lib/chcpBuildOptions.js",
+    "hash": "ca5fc9ae22e85d2a598c6995fb286dc1"
+  },
+  {
+    "file": "plugins/cordova-hot-code-push-plugin/scripts/lib/chcpConfigXmlReader.js",
+    "hash": "896f6e0748d1095db7b9e5a81f68b199"
+  },
+  {
+    "file": "plugins/cordova-hot-code-push-plugin/scripts/lib/chcpConfigXmlWriter.js",
+    "hash": "d4cf0884b934eaf65d1ee0e14db885a2"
+  },
+  {
+    "file": "plugins/cordova-hot-code-push-plugin/scripts/lib/iosWKWebViewEngineSupport.js",
+    "hash": "0d2f63911fb746ad1bd325aee06430b7"
+  },
+  {
+    "file": "plugins/cordova-hot-code-push-plugin/scripts/lib/xmlHelper.js",
+    "hash": "9e74bf723961349fdba3bcb707c67e73"
+  },
+  {
+    "file": "plugins/cordova-hot-code-push-plugin/www/chcp.js",
+    "hash": "063606b70ae2deef9a91ff5d88d0ac72"
+  },
+  {
+    "file": "plugins/cordova-plugin-camera/www/Camera.js",
+    "hash": "18bda5af3468e63316adbc4f06c4f255"
+  },
+  {
+    "file": "plugins/cordova-plugin-camera/www/CameraConstants.js",
+    "hash": "17fc35369c287d7bc7c90b5dd41d8782"
+  },
+  {
+    "file": "plugins/cordova-plugin-camera/www/CameraPopoverHandle.js",
+    "hash": "20ff23b39202cf045ea12967288d36b5"
+  },
+  {
+    "file": "plugins/cordova-plugin-camera/www/CameraPopoverOptions.js",
+    "hash": "412ca44bf27d8337cacb11361afb6bac"
+  },
+  {
+    "file": "plugins/cordova-plugin-device/www/device.js",
+    "hash": "a8e1f175be1f5f9ff0d0baead3948ade"
+  },
+  {
+    "file": "plugins/cordova-plugin-file-transfer/www/FileTransfer.js",
+    "hash": "39b553d4bd8f34028b295ccc7ebba2ba"
+  },
+  {
+    "file": "plugins/cordova-plugin-file-transfer/www/FileTransferError.js",
+    "hash": "6069b622c77178373a5d3270a5826166"
+  },
+  {
+    "file": "plugins/cordova-plugin-file/www/android/FileSystem.js",
+    "hash": "c3575a23172c218da8dbbe70eb1cc628"
+  },
+  {
+    "file": "plugins/cordova-plugin-file/www/browser/isChrome.js",
+    "hash": "71954ec314878e6cc33c55254ce07e1e"
+  },
+  {
+    "file": "plugins/cordova-plugin-file/www/DirectoryEntry.js",
+    "hash": "42c62be22c094fa56e8753f2f4624eb6"
+  },
+  {
+    "file": "plugins/cordova-plugin-file/www/DirectoryReader.js",
+    "hash": "5afb13510935f95e83746d8a74265051"
+  },
+  {
+    "file": "plugins/cordova-plugin-file/www/Entry.js",
+    "hash": "c360ce0333aa20cb8cc14098bbc661bd"
+  },
+  {
+    "file": "plugins/cordova-plugin-file/www/File.js",
+    "hash": "716fd8966ea064bc59ef8ca25fa8d6ab"
+  },
+  {
+    "file": "plugins/cordova-plugin-file/www/FileEntry.js",
+    "hash": "cb6bb1736837fa74a2ddadfaf4373d85"
+  },
+  {
+    "file": "plugins/cordova-plugin-file/www/FileError.js",
+    "hash": "f4c563c418017d938b109f1b659c8b10"
+  },
+  {
+    "file": "plugins/cordova-plugin-file/www/FileReader.js",
+    "hash": "d31cc0f9ca0fbd58bee5b78c6c022b72"
+  },
+  {
+    "file": "plugins/cordova-plugin-file/www/FileSystem.js",
+    "hash": "8b6cf268e7b670fb47bcc3df7afa6c06"
+  },
+  {
+    "file": "plugins/cordova-plugin-file/www/fileSystemPaths.js",
+    "hash": "051c3fd16ab98f9f628fc805033336a2"
+  },
+  {
+    "file": "plugins/cordova-plugin-file/www/fileSystems-roots.js",
+    "hash": "35b059bff8bc7c101977ff71f3b73db3"
+  },
+  {
+    "file": "plugins/cordova-plugin-file/www/fileSystems.js",
+    "hash": "ece713eebfe7b7a0f2acdd0e8e00998d"
+  },
+  {
+    "file": "plugins/cordova-plugin-file/www/FileUploadOptions.js",
+    "hash": "c56db8d601faf614b948e28c5e4984d3"
+  },
+  {
+    "file": "plugins/cordova-plugin-file/www/FileUploadResult.js",
+    "hash": "670c4ee315e8fa91b139d852e6dbdee8"
+  },
+  {
+    "file": "plugins/cordova-plugin-file/www/FileWriter.js",
+    "hash": "79c59d3e489d84e3b0978b226d62f9a3"
+  },
+  {
+    "file": "plugins/cordova-plugin-file/www/Flags.js",
+    "hash": "b9b934430200eacf7c595fa3ef50faae"
+  },
+  {
+    "file": "plugins/cordova-plugin-file/www/LocalFileSystem.js",
+    "hash": "c3466cbe326eb3fc8f991aca815454f7"
+  },
+  {
+    "file": "plugins/cordova-plugin-file/www/Metadata.js",
+    "hash": "0e03a00c19636d4788125b57b4f07153"
+  },
+  {
+    "file": "plugins/cordova-plugin-file/www/ProgressEvent.js",
+    "hash": "9836c51dd1dd38790d88de044cf63272"
+  },
+  {
+    "file": "plugins/cordova-plugin-file/www/requestFileSystem.js",
+    "hash": "524147837dcbc128be4a340f978aaa08"
+  },
+  {
+    "file": "plugins/cordova-plugin-file/www/resolveLocalFileSystemURI.js",
+    "hash": "a14ca0e278238532f7a875c38ba342d4"
+  },
+  {
+    "file": "plugins/cordova-plugin-media-capture/www/android/init.js",
+    "hash": "e2d4e74a2bfd29001d139b62e99d345c"
+  },
+  {
+    "file": "plugins/cordova-plugin-media-capture/www/capture.js",
+    "hash": "045ba46b52171e030ab31b985c4a8aa7"
+  },
+  {
+    "file": "plugins/cordova-plugin-media-capture/www/CaptureAudioOptions.js",
+    "hash": "2bb9fd741cbad9fe4d3ae42bbe4d0812"
+  },
+  {
+    "file": "plugins/cordova-plugin-media-capture/www/CaptureError.js",
+    "hash": "c309b1d8573de04c1137da1a854634be"
+  },
+  {
+    "file": "plugins/cordova-plugin-media-capture/www/CaptureImageOptions.js",
+    "hash": "d82cb2490fd9e38fb8397c84a8618996"
+  },
+  {
+    "file": "plugins/cordova-plugin-media-capture/www/CaptureVideoOptions.js",
+    "hash": "f916b6fb8793312276d90017bf7dd9a2"
+  },
+  {
+    "file": "plugins/cordova-plugin-media-capture/www/helpers.js",
+    "hash": "fd79fc5b9ef4904598a4fd06022ee958"
+  },
+  {
+    "file": "plugins/cordova-plugin-media-capture/www/MediaFile.js",
+    "hash": "40cfa68d6efda8d886df6ccee25fb851"
+  },
+  {
+    "file": "plugins/cordova-plugin-media-capture/www/MediaFileData.js",
+    "hash": "9bb8899cf88ecfc6e7639c5750d46430"
+  },
+  {
+    "file": "plugins/cordova-plugin-media/www/Media.js",
+    "hash": "ab37e33ae44ee56e2bd084eebc858aff"
+  },
+  {
+    "file": "plugins/cordova-plugin-media/www/MediaError.js",
+    "hash": "78158f20a94ff7f28121eb8ef8a731c0"
   }
 ]

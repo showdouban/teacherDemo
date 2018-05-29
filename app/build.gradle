@@ -48,6 +48,7 @@ dependencies {
     implementation project(':common_component_scratch')
     implementation project(':common_component_compileimage')
     implementation project(':common_library_webmodule')
+    implementation project(':common_component_laucher')
     implementation 'com.android.support:multidex:1.0.0'
     debugImplementation  'com.squareup.leakcanary:leakcanary-android:1.5.4'//or1.4-beta1
 

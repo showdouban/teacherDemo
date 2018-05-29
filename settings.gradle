@@ -21,3 +21,9 @@ include ':common_component_scratch'
 project(':common_component_scratch').projectDir = new File('../CordovaCrossWalkAndroid/common_component_scratch')
 include ':common_component_compileimage'
 project(':common_component_compileimage').projectDir = new File('../CordovaCrossWalkAndroid/common_component_compileimage')
+include ':common_library_aliupload'
+project(':common_library_aliupload').projectDir = new File('../CordovaCrossWalkAndroid/common_library_aliupload')
+include ':common_component_laucher'
+project(':common_component_laucher').projectDir = new File('../CordovaCrossWalkAndroid/common_component_laucher')
+include ':common_library_okhttp'
+project(':common_library_okhttp').projectDir = new File('../CordovaCrossWalkAndroid/common_library_okhttp')

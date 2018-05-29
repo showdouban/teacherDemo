@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <manifest android:hardwareAccelerated="true"
-    package="com.anoah.youxueban.teacher"
+    package="com.anoah.teacherdemo"
     xmlns:android="http://schemas.android.com/apk/res/android">
     <supports-screens android:anyDensity="true"
         android:largeScreens="true"
@@ -35,10 +35,11 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:name="com.anoah.youxueban.MyApplication">
+        <!--启动页-->
         <activity android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale"
             android:launchMode="singleTop"
-            android:name=".WelcomeActivity"
-            android:theme="@style/AppThemeFull"
+            android:name="com.anoah.common_component_laucher.activity.WelcomeActivity"
+            android:theme="@style/WelcomeStyle"
             android:windowSoftInputMode="adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -46,59 +47,75 @@
             </intent-filter>
         </activity>
 
-
         <activity android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale"
             android:launchMode="singleTop"
-            android:name=".CordDemoActitivy"
-            android:theme="@style/AppThemeFull"
+            android:name="com.anoah.common_component_laucher.activity.SecondWelcomeActivity"
+            android:theme="@style/WelcomeSecondeStyle"
             android:windowSoftInputMode="adjustResize">
         </activity>
 
 
         <activity android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale"
             android:launchMode="singleTop"
+            android:name="com.anoah.youxueban.teacher.CordDemoActitivy"
+            android:theme="@style/AppThemeMain"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="com.anoah.main" />
+                <category android:name="${applicationId}" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!--VLC页-->
+        <activity android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale"
+            android:launchMode="singleTop"
             android:name="com.anoah.vlc.VlcActivity"
-            android:theme="@style/AppTheme"
+            android:theme="@style/VLCStyle"
             android:windowSoftInputMode="adjustResize">
 
             <intent-filter>
                 <action android:name="com.anoah.vlc" />
+                <category android:name="${applicationId}" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
+        <!--批改作业-->
         <activity android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale"
             android:launchMode="singleTop"
             android:name="com.anoah.librarycorrectwork.activity.CorrectPaintActivity"
-            android:theme="@style/AppThemeFull"
+            android:theme="@style/CorrectStyle"
             android:windowSoftInputMode="adjustResize">
 
             <intent-filter>
                 <action android:name="com.anoah.correctwork" />
+                <category android:name="${applicationId}" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
+        <!--二维码-->
         <activity android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale"
             android:launchMode="singleTop"
             android:name="com.anoah.zxing.CaptureActivity"
-            android:theme="@style/AppThemeFull"
+            android:theme="@style/ZXINGStyle"
             android:windowSoftInputMode="adjustResize">
 
             <intent-filter>
                 <action android:name="com.anoah.zxing" />
+                <category android:name="${applicationId}" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
+        <!--切图-->
         <activity android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale"
             android:launchMode="singleTop"
             android:name="com.anoah.clipimage.ClipImageActivity"
-            android:theme="@style/AppThemeFull"
+            android:theme="@style/ClipStyle"
             android:windowSoftInputMode="adjustResize">
 
             <intent-filter>
                 <action android:name="com.anoah.clipimage" />
+                <category android:name="${applicationId}" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
@@ -107,11 +124,12 @@
         <activity android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale"
             android:launchMode="singleTop"
             android:name="com.anoah.common_component_scratch.ScratchActivity"
-            android:theme="@style/Transparent1"
+            android:theme="@style/ScracheStyle"
             android:windowSoftInputMode="adjustResize">
 
             <intent-filter>
                 <action android:name="com.anoah.scratch" />
+                <category android:name="${applicationId}" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
@@ -121,11 +139,12 @@
         <activity android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale"
             android:launchMode="singleTop"
             android:name="com.anoah.common_component_compileimage.activity.CameraActivity"
-            android:theme="@style/AppThemeFull"
+            android:theme="@style/ImageCameraTheme"
             android:windowSoftInputMode="adjustResize">
 
             <intent-filter>
                 <action android:name="com.anoah.takephoto" />
+                <category android:name="${applicationId}" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
@@ -135,6 +154,12 @@
             android:launchMode="singleTop"
             android:name="com.anoah.common_component_compileimage.activity.BrowseImageActivity"
             android:theme="@style/ImageGalleryTheme" >
+
+            <intent-filter>
+                <action android:name="com.anoah.showphoto" />
+                <category android:name="${applicationId}" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
         </activity>
 
         <activity
@@ -144,6 +169,7 @@
             android:theme="@style/ImageGalleryTheme" >
             <intent-filter>
                 <action android:name="com.anoah.choosephoto" />
+                <category android:name="${applicationId}" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>

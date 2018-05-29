@@ -33,19 +33,11 @@ module.exports = [
     ]
   },
   {
-    "id": "com.anoah.uninstallplugin.uninstallplugin",
-    "file": "plugins/com.anoah.uninstallplugin/www/uninstallplugin.js",
-    "pluginId": "com.anoah.uninstallplugin",
+    "id": "cordova-plugin-device.device",
+    "file": "plugins/cordova-plugin-device/www/device.js",
+    "pluginId": "cordova-plugin-device",
     "clobbers": [
-      "cordova.plugins.uninstallplugin"
-    ]
-  },
-  {
-    "id": "com.anoah.firstplugin.firstplugin",
-    "file": "plugins/com.anoah.firstplugin/www/firstplugin.js",
-    "pluginId": "com.anoah.firstplugin",
-    "clobbers": [
-      "firstplugin"
+      "device"
     ]
   },
   {
@@ -238,6 +230,90 @@ module.exports = [
     ]
   },
   {
+    "id": "cordova-plugin-media-capture.CaptureAudioOptions",
+    "file": "plugins/cordova-plugin-media-capture/www/CaptureAudioOptions.js",
+    "pluginId": "cordova-plugin-media-capture",
+    "clobbers": [
+      "CaptureAudioOptions"
+    ]
+  },
+  {
+    "id": "cordova-plugin-media-capture.CaptureImageOptions",
+    "file": "plugins/cordova-plugin-media-capture/www/CaptureImageOptions.js",
+    "pluginId": "cordova-plugin-media-capture",
+    "clobbers": [
+      "CaptureImageOptions"
+    ]
+  },
+  {
+    "id": "cordova-plugin-media-capture.CaptureVideoOptions",
+    "file": "plugins/cordova-plugin-media-capture/www/CaptureVideoOptions.js",
+    "pluginId": "cordova-plugin-media-capture",
+    "clobbers": [
+      "CaptureVideoOptions"
+    ]
+  },
+  {
+    "id": "cordova-plugin-media-capture.CaptureError",
+    "file": "plugins/cordova-plugin-media-capture/www/CaptureError.js",
+    "pluginId": "cordova-plugin-media-capture",
+    "clobbers": [
+      "CaptureError"
+    ]
+  },
+  {
+    "id": "cordova-plugin-media-capture.MediaFileData",
+    "file": "plugins/cordova-plugin-media-capture/www/MediaFileData.js",
+    "pluginId": "cordova-plugin-media-capture",
+    "clobbers": [
+      "MediaFileData"
+    ]
+  },
+  {
+    "id": "cordova-plugin-media-capture.MediaFile",
+    "file": "plugins/cordova-plugin-media-capture/www/MediaFile.js",
+    "pluginId": "cordova-plugin-media-capture",
+    "clobbers": [
+      "MediaFile"
+    ]
+  },
+  {
+    "id": "cordova-plugin-media-capture.helpers",
+    "file": "plugins/cordova-plugin-media-capture/www/helpers.js",
+    "pluginId": "cordova-plugin-media-capture",
+    "runs": true
+  },
+  {
+    "id": "cordova-plugin-media-capture.capture",
+    "file": "plugins/cordova-plugin-media-capture/www/capture.js",
+    "pluginId": "cordova-plugin-media-capture",
+    "clobbers": [
+      "navigator.device.capture"
+    ]
+  },
+  {
+    "id": "cordova-plugin-media-capture.init",
+    "file": "plugins/cordova-plugin-media-capture/www/android/init.js",
+    "pluginId": "cordova-plugin-media-capture",
+    "runs": true
+  },
+  {
+    "id": "cordova-plugin-file-transfer.FileTransferError",
+    "file": "plugins/cordova-plugin-file-transfer/www/FileTransferError.js",
+    "pluginId": "cordova-plugin-file-transfer",
+    "clobbers": [
+      "window.FileTransferError"
+    ]
+  },
+  {
+    "id": "cordova-plugin-file-transfer.FileTransfer",
+    "file": "plugins/cordova-plugin-file-transfer/www/FileTransfer.js",
+    "pluginId": "cordova-plugin-file-transfer",
+    "clobbers": [
+      "window.FileTransfer"
+    ]
+  },
+  {
     "id": "cordova-hot-code-push-plugin.chcp",
     "file": "plugins/cordova-hot-code-push-plugin/www/chcp.js",
     "pluginId": "cordova-hot-code-push-plugin",
@@ -250,12 +326,13 @@ module.exports.metadata =
 // TOP OF METADATA
 {
   "cordova-plugin-whitelist": "1.3.3",
-  "cordova-plugin-crosswalk-webview": "2.4.0",
   "cordova-plugin-camera": "4.0.2",
-  "com.anoah.uninstallplugin": "1.0.0",
-  "com.anoah.firstplugin": "1.0.0",
+  "cordova-plugin-device": "2.0.1",
   "cordova-plugin-file": "6.0.1",
   "cordova-plugin-media": "5.0.2",
+  "cordova-plugin-media-capture": "3.0.1",
+  "cordova-plugin-file-transfer": "1.7.1",
+  "cordova-plugin-crosswalk-webview": "2.4.0",
   "cordova-hot-code-push-plugin": "1.5.3"
 };
 // BOTTOM OF METADATA

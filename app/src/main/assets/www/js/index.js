@@ -40,6 +40,43 @@ var app = {
         listeningElement.setAttribute('style', 'display:none;');
         receivedElement.setAttribute('style', 'display:block;');
 
+//        document.addEventListener("chcp_updateIsReadyToInstall", function(eventData){
+//            var error = eventData.details.error;
+//              if (error) {
+//                console.log('Error with code: ' + error.code);
+//                console.log('Description: ' + error.description);
+//              }else{
+//                    console.log('Success with code: );
+//              }
+//        }, false);
+
+
+
+
+        document.getElementById("HotCode").addEventListener("click",function (){
+                            var options = {
+                              'config-file': 'http://192.168.41.17:81/chcp.json'
+                            };
+                            chcp.fetchUpdate( function(error, data){
+                                    if (error) {
+                                         console.log('Failed to load the update with error code: ' + error.code);
+                                         console.log(error.description);
+                                         return;
+                                       }
+                                       console.log('Update is loaded, running the installation');
+
+                                       chcp.installUpdate(function(error){
+                                        if (error) {
+                                              console.log('Failed to install the update with error code: ' + error.code);
+                                              console.log(error.description);
+                                            } else {
+                                              console.log('Update installed!');
+                                            }
+                                       });
+                            },options);
+                },true);
+
+
         document.getElementById("getExternalStorageDirectory").addEventListener("click",function (){
             cordova.exec(
                 function (message) {
@@ -171,7 +208,7 @@ var app = {
 
                         },true);
 
-        document.getElementById("correctwork").addEventListener("click",function (){
+        document.getElementById("clearCache").addEventListener("click",function (){
                    cordova.exec(
                                  function (message) {
                                      console.log("index.js : success = " + message);
@@ -179,11 +216,24 @@ var app = {
                                  function (message) {
                                      console.log("index.js : fail11 = " + message);
                                  },
-                                 "CorrectWork",
-                                 "studentWork",
-                                 ['1','111',10,1]
-                                       );
+                                 "CacheControl",
+                                 "clearCache",
+                                 '');
                 },true);
+
+        document.getElementById("getCacheSize").addEventListener("click",function (){
+                           cordova.exec(
+                                         function (message) {
+                                             console.log("index.js : success = " + message);
+                                         },
+                                         function (message) {
+                                             console.log("index.js : fail11 = " + message);
+                                         },
+                                         "CacheControl",
+                                         "getCacheSize",
+                                         ''
+                                               );
+                        },true);
 
         document.getElementById("correctwork").addEventListener("click",function (){
                            cordova.exec(
@@ -226,6 +276,7 @@ var app = {
                                                  ''
                                                        );
                                 },true);
+                                /*https://dev.anoah.com/yxp_api2/debug/upload/getAuthTestType1/*/
         document.getElementById("Scratch").addEventListener("click",function (){
                                            cordova.exec(
                                                          function (message) {
@@ -236,7 +287,9 @@ var app = {
                                                          },
                                                          "Scratch",
                                                          "scratchMode",
-                                                         ['2222','11111','4444','11']
+                                                         ['32850','2019741-subject:2-qtype:2','9002511525420300001','879002511526006800001f'
+                                                         ,'9002511526006800001','','http://api2.dev.anoah.com/jwt/answer/draft/upload_auth/',
+                                                         'http://dev.anoah.com/yxp_api2/jwt/answer/draft/save/','eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ3d3cuZGV2LmFub2FoLmNvbSIsImV4cCI6MTUyNjk5NjY2MSwiZGV2aWNlIjoiVVBBRCIsIm1vZHVsZSI6IkVCQUdfU1RVREVOVCIsInZlcnNpb24iOiJ2MS4wIiwiTUFDIjoiIiwibWFjaGluZWlkIjoiIiwiVVVJRCI6IiIsInVzZXJpZCI6MCwidXNlcm5hbWUiOiIiLCJ0aW1lZGlmZiI6M30.0ZBycVTXYBe5Nin6jVQqHf649KQ22f8LZQ3Yxyk5T9g']
                                                                );
                                         },true);
         document.getElementById("TakePhoto").addEventListener("click",function (){
@@ -249,9 +302,11 @@ var app = {
                                                                  },
                                                                  "CompileImage",
                                                                  "takePhoto",
-                                                                 ''
+                                                                 ['32850','eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ3d3cuZGV2LmFub2FoLmNvbSIsImV4cCI6MTUyNjk5NjY2MSwiZGV2aWNlIjoiVVBBRCIsIm1vZHVsZSI6IkVCQUdfU1RVREVOVCIsInZlcnNpb24iOiJ2MS4wIiwiTUFDIjoiIiwibWFjaGluZWlkIjoiIiwiVVVJRCI6IiIsInVzZXJpZCI6MCwidXNlcm5hbWUiOiIiLCJ0aW1lZGlmZiI6M30.0ZBycVTXYBe5Nin6jVQqHf649KQ22f8LZQ3Yxyk5T9g'
+                                                                    ,'http://api2.dev.anoah.com/jwt/answer/record/upload_auth/']
                                                                        );
                                                 },true);
+
         document.getElementById("ChoosePhoto").addEventListener("click",function (){
                                                            cordova.exec(
                                                                          function (message) {
@@ -262,11 +317,28 @@ var app = {
                                                                          },
                                                                          "CompileImage",
                                                                          "choosePhoto",
-                                                                         ''
+                                                                         ['32850','eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ3d3cuZGV2LmFub2FoLmNvbSIsImV4cCI6MTUyNjk5NjY2MSwiZGV2aWNlIjoiVVBBRCIsIm1vZHVsZSI6IkVCQUdfU1RVREVOVCIsInZlcnNpb24iOiJ2MS4wIiwiTUFDIjoiIiwibWFjaGluZWlkIjoiIiwiVVVJRCI6IiIsInVzZXJpZCI6MCwidXNlcm5hbWUiOiIiLCJ0aW1lZGlmZiI6M30.0ZBycVTXYBe5Nin6jVQqHf649KQ22f8LZQ3Yxyk5T9g'
+                                                                                                                                             ,'http://api2.dev.anoah.com/jwt/answer/record/upload_auth/','6']
                                                                                );
                                                         },true);
 
+         document.getElementById("clipImage").addEventListener("click",function (){
+                                                                    cordova.exec(
+                                                                                  function (message) {
+                                                                                      console.log("index.js :clip = " + message);
+                                                                                  },
 
+
+
+                                                                                  function (message) {
+                                                                                      console.log("index.js : clipfail = " + message);
+                                                                                  },
+                                                                                  "ClipImage",
+                                                                                   "clipImage",
+                                                                                    ['https://ss0.bdstatic.com/-0U0bnSm1A5BphGlnYG/tam-ogel/8110e764e668de05288a215de953205d_259_194.jpg',1,0]
+
+                                                                                        );
+                                                                                        },true);
         document.getElementById("installHot").addEventListener("click",function (){
                                                    chcp.installUpdate(function(error){
                                                     console.log("index.js : error = " + error);
@@ -281,6 +353,74 @@ var app = {
                                                             });
                                                         },true);
 
+        document.getElementById("captureVideo").addEventListener("click",function (){
+                                                          navigator.device.capture.captureVideo(
+                                                              function(mediaFiles) {
+                                                                  var i, path, len;
+                                                                  for (i = 0, len = mediaFiles.length; i < len; i += 1) {
+                                                                      path = mediaFiles[i].fullPath;
+                                                                      // do something interesting with the file
+                                                                  }
+                                                              }, function(error) {
+                                                                     navigator.notification.alert('Error code: ' + error.code, null, 'Capture Error');
+                                                                 }, ''
+                                                          );
+                                                        },true);
+
+         document.getElementById("Laucher").addEventListener("click",function (){
+                                                                             cordova.exec(
+                                                                                           function (message) {
+                                                                                               console.log("index.js :clip = " + message);
+                                                                                           },
+                                                                                           function (message) {
+                                                                                               console.log("index.js : clipfail = " + message);
+                                                                                           },
+                                                                                           "Laucher",
+                                                                                            "downLoadSecondLaucher",
+                                                                                             ['http://apis2.dev.anoah.com:8181','1'] );
+                                                                                             },true);
+
+
+         document.getElementById("AliUpLoad").addEventListener("click",function (){
+                            alert("eeeee");
+                            cordova.exec(
+                                          function (message) {
+                                              console.log("index.js : success = " + message);
+                                          },
+                                          function (message) {
+                                              console.log("index.js : fail11 = " + message);
+                                          },
+                                          "AliUpLoad",
+                                          "upload",
+                                          ['32850','eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ3d3cuZGV2LmFub2FoLmNvbSIsImV4cCI6MTUyNjk5NjY2MSwiZGV2aWNlIjoiVVBBRCIsIm1vZHVsZSI6IkVCQUdfU1RVREVOVCIsInZlcnNpb24iOiJ2MS4wIiwiTUFDIjoiIiwibWFjaGluZWlkIjoiIiwiVVVJRCI6IiIsInVzZXJpZCI6MCwidXNlcm5hbWUiOiIiLCJ0aW1lZGlmZiI6M30.0ZBycVTXYBe5Nin6jVQqHf649KQ22f8LZQ3Yxyk5T9g'
+                                           ,'http://api2.dev.anoah.com/jwt/answer/record/upload_auth/',['file:///storage/emulated/0/tencent/MicroMsg/WeiXin/mmexport15263616369381526376001596.jpg','file:///storage/emulated/0/DCIM/Camera/IMG_20180424_205651.jpg']]);
+                         },true);
+//           document.getElementById("getStatusBarHeight").addEventListener("click",function (){
+//                                                                                                cordova.exec(
+//                                                                                                              function (message) {
+//                                                                                                                  console.log("index.js :clip = " + message);
+//                                                                                                              },
+//                                                                                                              function (message) {
+//                                                                                                                  console.log("index.js : clipfail = " + message);
+//                                                                                                              },
+//                                                                                                              "Laucher",
+//                                                                                                               "getStatusBarHeight",
+//                                                                                                                '');
+//                                                                                                                },true);
+
+          document.getElementById("ShowPhoto").addEventListener("click",function (){
+                                     alert("22222");
+                                     cordova.exec(
+                                                   function (message) {
+                                                       console.log("index.js : success = " + message);
+                                                   },
+                                                   function (message) {
+                                                       console.log("index.js : fail11 = " + message);
+                                                   },
+                                                   "CompileImage",
+                                                   "showPhoto",
+                                                   [['file:///storage/emulated/0/tencent/MicroMsg/WeiXin/mmexport15263616369381526376001596.jpg','file:///storage/emulated/0/DCIM/Camera/IMG_20180424_205651.jpg'],0,0]);
+                                  },true);
     },
 
     //android调用js方法
