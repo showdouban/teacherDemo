@@ -29,7 +29,6 @@ public class CordDemoActitivy extends CordovaActivity {
         initWindows();
         super.onCreate(savedInstanceState);
         init();
-//        initSetting();
         loadUrl(launchUrl);
     }
     private void initWindows() {
@@ -68,6 +67,14 @@ public class CordDemoActitivy extends CordovaActivity {
             view.setBackgroundColor(color);
             contentView.addView(view);
         }
+    }
+
+    @Override
+    public Object onMessage(String id, Object data) {
+        if(id.equals("OnXWalkReady")){
+            initSetting();
+        }
+        return super.onMessage(id, data);
     }
 
     /**

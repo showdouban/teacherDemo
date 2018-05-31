@@ -15,6 +15,9 @@ public class BaseWebActivity extends CordovaActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         PushAgent.getInstance(this).onAppStart();//推送使用的
+
+
+
     }
 
     @Override
