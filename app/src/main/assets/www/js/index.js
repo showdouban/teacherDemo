@@ -310,9 +310,11 @@ var app = {
         document.getElementById("ChoosePhoto").addEventListener("click",function (){
                                                            cordova.exec(
                                                                          function (message) {
+                                                                               alert(3)
                                                                              console.log("index.js :clip = " + message);
                                                                          },
                                                                          function (message) {
+                                                                                alert(4)
                                                                              console.log("index.js : clipfail = " + message);
                                                                          },
                                                                          "CompileImage",
@@ -385,15 +387,16 @@ var app = {
                             alert("eeeee");
                             cordova.exec(
                                           function (message) {
-                                              console.log("index.js : success = " + message);
+                                              console.log("AliUpLoad: fail11 = " + message);
+                                              alert(message);
                                           },
                                           function (message) {
-                                              console.log("index.js : fail11 = " + message);
+                                              console.log("AliUpLoad: fail11 = " + message);
                                           },
                                           "AliUpLoad",
                                           "upload",
-                                          ['32850','eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ3d3cuZGV2LmFub2FoLmNvbSIsImV4cCI6MTUyNjk5NjY2MSwiZGV2aWNlIjoiVVBBRCIsIm1vZHVsZSI6IkVCQUdfU1RVREVOVCIsInZlcnNpb24iOiJ2MS4wIiwiTUFDIjoiIiwibWFjaGluZWlkIjoiIiwiVVVJRCI6IiIsInVzZXJpZCI6MCwidXNlcm5hbWUiOiIiLCJ0aW1lZGlmZiI6M30.0ZBycVTXYBe5Nin6jVQqHf649KQ22f8LZQ3Yxyk5T9g'
-                                           ,'http://api2.dev.anoah.com/jwt/answer/record/upload_auth/',['file:///storage/emulated/0/tencent/MicroMsg/WeiXin/mmexport15263616369381526376001596.jpg','file:///storage/emulated/0/DCIM/Camera/IMG_20180424_205651.jpg']]);
+                                          ['33737','eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ3d3cuZGV2LmFub2FoLmNvbSIsImV4cCI6MTUyNzU4MDkwNSwiZGV2aWNlIjoiUENfQlJPV1NFUiIsIm1vZHVsZSI6IllPVVhVRS1CQU4iLCJ2ZXJzaW9uIjoidjEuMCIsIk1BQyI6IiIsIm1hY2hpbmVpZCI6IiIsIlVVSUQiOiIiLCJ1c2VyaWQiOiIxMDI0NjE5IiwidXNlcm5hbWUiOiJwdXJvbmdsb25nIiwidGltZWRpZmYiOi0xOS40NjkwMDAxMDEwODk0Nzh9.ZHitZIUp3t0hQWK4VQrKxLYzwg4q68jyJMhqj4bFDOA'
+                                           ,'http://api2.dev.anoah.com/jwt/homework/correct/upload_auth',"['file:///storage/emulated/0/tencent/MicroMsg/WeiXin/mmexport15263616369381526376001596.jpg','file:///storage/emulated/0/DCIM/Camera/IMG_20180424_205651.jpg']"]);
                          },true);
 //           document.getElementById("getStatusBarHeight").addEventListener("click",function (){
 //                                                                                                cordova.exec(
